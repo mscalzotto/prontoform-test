@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es5",                          
-    "module": "commonjs",                    
-    "lib": ["es6"],                     
-    "allowJs": true,
-    "outDir": "build",                          
-    "rootDir": "src",
-    "strict": true,         
+    "target": "es2017",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "strict": true,
     "noImplicitAny": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "types": ["node"],
-    "typeRoots" : ["./node_modules/@types"],
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude" : [
-    "src/**/*.spec.ts"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
