@@ -7,9 +7,6 @@ const basePath = '/prontoform-test';
 const port: string | number = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use('*', (_req, res) => {
-  res.send('<h1>Welcome to your server!</h1>');
-});
 
 app.use(`${basePath}/api`, api);
 
