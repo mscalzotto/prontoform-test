@@ -1,4 +1,4 @@
-import express, { NextFunction, Request, Response } from 'express';
+import express, { Request, Response } from 'express';
 import NodeCache from 'node-cache';
 
 const DEFAULT_TTL = 172800;
