@@ -15,8 +15,8 @@ api.use('/', (req: Request, res: Response, next: NextFunction) => {
 });
 
 api.post('/inspection/create', (req: Request, res: Response) => {
-  console.info('[REQUEST BODY]', req.body);
-  res.status(201).json({
+  console.info('[REQUEST BODY]', JSON.stringify(req.body, null, 2));
+  res.json({
     requestBody: req.body,
   });
 });
