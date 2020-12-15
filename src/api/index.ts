@@ -1,7 +1,8 @@
 import express, { Request, Response } from 'express';
 import NodeCache from 'node-cache';
 
-const DEFAULT_TTL = 172800;
+//1 week
+const DEFAULT_TTL = 604800000;
 
 const cacheService: NodeCache = new NodeCache({
   stdTTL: DEFAULT_TTL,
