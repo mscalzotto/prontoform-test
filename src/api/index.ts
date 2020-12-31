@@ -32,7 +32,7 @@ api.get('/cache/inspection/:id', (req: Request, res: Response) => {
   res.json(cacheService.get(req.params.id));
 });
 
-api.post('/inspection/create', (req: Request, res: Response) => {
+api.post('/inspection', (req: Request, res: Response) => {
   cacheService.set(
     `${parseInt(`${Math.random() * 1000000}`)}`,
     req.body,
@@ -43,4 +43,10 @@ api.post('/inspection/create', (req: Request, res: Response) => {
   res.json({
     requestBody: req.body,
   });
+});
+
+api.get('/test-data', (_req: Request, res: Response) => {
+  res.json({
+    value: '87645 - Maxi Scalzotto - Renault Megane Unique 2004 - EQJ603';
+  })
 });
