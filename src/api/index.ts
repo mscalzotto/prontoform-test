@@ -47,6 +47,6 @@ api.post('/inspection', (req: Request, res: Response) => {
 
 api.get('/test-data', (_req: Request, res: Response) => {
   res.json({
-    value: '87645 - Maxi Scalzotto - Renault Megane Unique 2004 - EQJ603';
-  })
+    value: '87645 - Maxi Scalzotto - Renault Megane Unique 2004 - EQJ603',
+  });
 });
